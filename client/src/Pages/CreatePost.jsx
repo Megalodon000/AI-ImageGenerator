@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
-import { FormField, Loader } from '../components';
+import FormField from '../components/FormField';
+import Loader from '../components/Loader';
+
+
 
 const CreatePost = () => {
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ const CreatePost = () => {
   }
 
   const handleChange = (e) => {
-    
+
   }
 
   const handleSurpriseMe = () => {
@@ -31,13 +33,13 @@ const CreatePost = () => {
 
   return (
     <section className="max-w-7xl mx-auto">
-        <div>
-            <h1 className="font-extrabold text-[#211328] text-[34px]">Create</h1>
+      <div>
+        <h1 className="font-extrabold text-[#211328] text-[34px]">Create</h1>
         <p className="mt-2 text-[#6d6070] text-[16px] max-w[500px]">Create an assortment of creative and visually captivating pictures through DALL-E AI and share them with your community.</p>
-        </div>
+      </div>
 
-        <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
-          <div className="flex flex-col gap-5">
+      <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
+        <div className="flex flex-col gap-5">
           <FormField
             labelName="Your Name"
             type="text"
@@ -57,8 +59,8 @@ const CreatePost = () => {
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
-          </div>
-        </form>
+        </div>
+      </form>
     </section>
   )
 }
