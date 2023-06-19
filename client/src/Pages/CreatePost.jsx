@@ -81,7 +81,7 @@ const CreatePost = () => {
     <section className="max-w-7xl mx-auto">
         <div>
             <h1 className="font-extrabold text-[#211328] text-[34px]">Create</h1>
-        <p className="mt-2 text-[#6d6070] text-[16px] max-w[500px]">Create an assortment of creative and visually captivating pictures through DALL-E AI and share them with your community.</p>
+        <p className="mt-2 text-[#6d6070] text-[16px] max-w[500px]">Create an assortment of creative and visually captivating pictures through AI Artistry and share them with your community.</p>
         </div>
 
         <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
