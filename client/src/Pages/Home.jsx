@@ -59,7 +59,6 @@ const Home = () => {
         {title}
       </h2>
     )
->>>>>>> 748c03f19a59574efe91a40ce2eb8be593283b8c
   }
 
   return (
