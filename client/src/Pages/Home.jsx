@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Loader, Card, FormField } from '../components'
-import CreatePost from './CreatePost';
+
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -55,18 +55,18 @@ const Home = () => {
       return data.map((post) => <Card key={post._id} {...post} />)
     }
     return (
-      <h2 className="mt-5 font-bold text-[#274eff] text-xl uppercase">
+      <h2 className="mt-5 font-bold text-[#4361ee] text-xl uppercase">
         {title}
       </h2>
     )
   }
 
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto ">
 
       <div>
-        <h1 className="font-extrabold text-[#211328] text-[34px]">The Community Showcase</h1>
-        <p className="mt-2 text-[#6d6070] text-[16px] max-w[500px]">Browse through an assortment of creative and visually captivating pictures brought to life by AI Artistry 2.0</p>
+        <h1 className="font-extrabold text-black text-[34px]">The Community Showcase</h1>
+        <p className="mt-2 text-black text-[16px] max-w[500px]">Browse through an assortment of creative and visually captivating pictures brought to life by AI Artistry 2.0</p>
       </div>
       <div className="mt-16">
         <FormField
@@ -88,7 +88,7 @@ const Home = () => {
             {
               searchText && (
                 <h2 className="font-medium text-[#79838a] text-xl mb-3">
-                  Showing results for <span className="text-[#30323a]">{searchText}</span>
+                  Showing results for <span className="text-[#3860ff]">{searchText}</span>
                 </h2>
               )
             }

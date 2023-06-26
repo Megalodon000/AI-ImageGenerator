@@ -1,10 +1,15 @@
 import Card from "./Card";
 import Loader from "./Loader";
 import FormField from "./FormField";
+import LoginForm from "./LoginForm";
+import Register from "./Register";
 
 
-export {
+
+export  {
     Card,
     FormField,
-    Loader
+    Loader,
+    LoginForm,
+    Register
 }

@@ -8,6 +8,12 @@ const connectDB = (url) => {
         console.error('failed to connect with mongo');
         console.error(err);
       });
+
+      try {
+        
+      } catch (error) {
+        
+      }
   };
   
   export default connectDB;
